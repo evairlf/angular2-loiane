@@ -1,0 +1,16 @@
+<Section class="property-binding">
+    <article>
+      <h3>Interpolation/Interpolação</h3>
+      <p>String renderizada com interpolação: {{ url }}</p> <! Como pegar a variavel da classe >
+      <p>Resultado de 1 + 1 é: {{ 1 + 1 }}</p> <! Data binding tbm pode fazer operaçoes >
+      <p>Resultado de 1 + 1 é: {{ 1 + 1 + getValor()}}</p> <! Tbm pode fazer operaçoes e usar métodos>
+      <P>Curso angular e gosto do curso: {{ cursoAngular && getCurtirCurso() }}</P> <! Tbm pode usar condicionais >
+    </article>
+
+    <article>
+        <h3>Property Binding</h3>
+        <img src="{{ urlDaImagem }}"> <! Usar URL da imagem salva na variavel urlDaImagem>
+        <img [src]="urlDaImagem"> <! mesma coisa do de cima mas sem as chaves, o SRC por baixo dos panos funciona como bind-src como visto abaixo>
+        <img bind-src="urlDaImagem">
+    </article>
+  </Section>
